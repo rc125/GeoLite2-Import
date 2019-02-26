@@ -8,7 +8,8 @@ CREATE TABLE [GeoLite2IPv4](
 	[is_satellite_provider] [int] NULL DEFAULT ((0)),
 	[postal_code] [nvarchar](16) NULL,
 	[latitude] [decimal](9,6) NULL,
-	[longitude] [decimal](9,6) NULL
+	[longitude] [decimal](9,6) NULL,
+	[accuracy_radius] [int] NULL
  CONSTRAINT [PK_GeoLite2IPv4] PRIMARY KEY CLUSTERED 
 (
 	[network] ASC
